@@ -53,7 +53,20 @@
                     }
                 ?>
             </tbody>
-           
+           <tfoot>
+               <tr>
+                    <?php 
+                        $sql = "SELECT * FROM certificados WHERE usuario = '$usuario' AND status = '1'";
+                        $resultado = mysqli_query($conn,$sql);
+                        $total = 0;
+                        while ($data = mysqli_fetch_array($resultado)){
+                            $total = $total + $data['horas'];
+                        };
+                    ?>
+                   <th scope="row" colspan="2">Total de Horas Homologadas:</th>
+                   <td colspan="2"><?php echo $total; ?></td>
+               </tr>
+           </tfoot>
         </table>
     </main>
 </body>
