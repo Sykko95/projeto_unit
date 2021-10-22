@@ -19,7 +19,7 @@
 		<form action="save.php" method="POST" enctype="multipart/form-data">
 			<div class="row mb-3">
 				<div class="col-9 col-md-4">
-					<input class="form-control" type="file" name="imagem" accept="image/gif, image/jpeg, image/png, application/pdf">
+					<input class="form-control" type="file" name="imagem" accept="image/gif, image/jpeg, image/png, application/pdf" required>
 				</div>
 			</div>
 			<div class="row mb-3">
@@ -27,7 +27,7 @@
                 <div class="col-md-5 col-9">
 					<div class="row">
 						<div class="form-floating my-2">
-							<input type="text" name="certificado" class="form-control" maxlength="50" placeholder="Nome do Certificado">
+							<input type="text" name="certificado" class="form-control" maxlength="50" placeholder="Nome do Certificado" required>
 							<label for="certificado" class="form-label">Nome do Certificado</label>
 						</div>
 					</div>
@@ -35,7 +35,7 @@
 				<div class="col-md-5 col-9">
 					<div class="row">
 						<div class="form-floating my-2">
-							<input type="text" name="tipo" class="form-control" maxlength="50" placeholder="Tipo de Atividade">
+							<input type="text" name="tipo" class="form-control" maxlength="50" placeholder="Tipo de Atividade" required>
 							<label for="tipo" class="form-label">Tipo de Atividade</label>
 						</div>
 					</div>
@@ -43,7 +43,7 @@
                 <div class="col-md-2 col-4">
                     <div class="row">
                         <div class="form-floating my-2">
-							<input type="text" name="horas" class="form-control" maxlength="4" placeholder="Horas" onkeypress="return isNumberKey(event)">
+							<input type="text" name="horas" class="form-control" maxlength="4" placeholder="Horas" onkeypress="return isNumberKey(event)" required>
 							<label for="horas" class="form-label">Horas</label>
 						</div>
                     </div>
