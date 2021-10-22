@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+body{
+    font-family: Sawarabi Gothic;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background-color: #f8f8f8;
+}
+.form-control:focus{
+	box-shadow: none;
+	border-color: black;
+    background-color: #fdfdfd;
+}
